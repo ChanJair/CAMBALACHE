@@ -1,0 +1,14 @@
+
+/*HEADER*/
+.navbar{
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    opacity: .7;
+}
+/*QUE ES CAMBALACHE*/
+.que{
+    background-image: url(../img/_20161109_204236.JPG);
+    background-size: cover;
+    height: 500px;
+}
