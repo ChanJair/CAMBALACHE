@@ -1,0 +1,183 @@
+.scrollify{
+    background-color: rebeccapurple;
+    z-index: 0;
+}
+.filtro{
+    width: 100%;
+    height: 500%;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+/*******CARRUSEL*******/
+
+.slItem{
+    background-image: url(../img/_20161109_204236.JPG);
+    background-size: cover;
+}
+/*******CARRUSEL*******/
+
+
+
+
+/*******NOSOTROS*******/
+#nosotros{
+    /*background-image: url(../img/famMoni.JPG);*/
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    color: white;
+    z-index: 15;
+    height: 100px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.navbar a{
+    padding-left: 15px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+}
+.titulo{
+    padding: 38vh 10% 0 10%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    z-index: 15;
+}
+.liga{
+    padding: 2% 0 0 0;
+}
+.boton{
+    z-index: 15;
+    color: white;
+    
+}
+/*******NOSOTROS*******/
+
+
+/*******INDICADORES*******/
+#indicadores{
+    background-image: url(../img/DSC_1406.JPG);
+    background-size: cover;
+}
+.intro{
+    padding: 30vh 100px 0 100px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    z-index: 15;
+}
+.indica{
+    padding: 2vh 100px 0 100px;
+}
+.impacto{
+    z-index: 15;
+}
+.cant{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6rem;
+    color: rgb(255, 230, 0);
+    display: block;
+    height: 180px;
+}
+.text{
+    color: white;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+}
+
+/*******INDICADORES*******/
+
+/*******BENEFICIARIOS*******/
+.coment{
+    padding: 30vh 130px 0 125px;
+}
+.testimonio{
+    z-index: 15;
+}
+.marco1, .marco2, .marco3{
+    background-color: white;
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+}
+.marco1{
+    background-image: url(../img/IMG_0945.JPG);
+    background-size: cover;
+}
+.marco2{
+    background-image: url(../img/IMG_0946.JPG);
+    background-size: cover;
+}
+.marco3{
+    background-image: url(../img/IMG_0947.JPG);
+    background-size: cover;
+}
+.nombre{
+    color: rgb(255, 230, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    padding: 1vh 0 0 0;
+}
+.opinion{
+    color: white;
+    padding: 0 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8rem;
+}
+
+/*******BENEFICIARIOS*******/
+
+
+/*******GALERIA*******/
+.piso{
+    height: 50%;
+}
+.izquierdo1, .izquierdo2, .centro1, .centro2, .derecho1, .derecho2{
+    padding: 0;
+    
+}
+.izquierdo1{
+    background-image: url(../img/famAntonio.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+.centro1{
+    background-image: url(../img/famClaudia.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+.derecho1{
+    background-image: url(../img/famRobert.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+.izquierdo2{
+    background-image: url(../img/famLore.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+.centro2{
+    background-image: url(../img/famTony.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+.derecho2{
+    background-image: url(../img/famJapo.JPG);
+    background-size: cover;
+    z-index: 15;
+}
+/*******GALERIA*******/
+

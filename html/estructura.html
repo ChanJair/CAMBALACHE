@@ -7,41 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../24042018/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../plugin/Scrollify/jquery.scrollify.js"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+            section : ".scrollify",
+            });
+        });
+    </script>
 </head>
 <body>
-    <!-----HEADER---->
-    <div class="container-fluid">
-        <div class="row navbar">
-            <div class="col-1 logo">LOGO</div>
-            <div class="col-1">CAMBALACHE</div>
-            <div class="col-10">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Que</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Como</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Porque</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Beneficiarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recolecta</a>
-                    </li>
-                  </ul>
+<!-------------------------CAMBALACHE-------------------->
+    <div id=nosotros class="container-fluid scrollify">
+        <!--
+            <div class="row barra">
+                <div class="col-2 logo d-flex justify-content-center">
+                    <a href="#"><img src="../img/111.png"></a>
+                </div>
+                <div class="col-10 items d-flex justify-content-end">
+                    <a href="#nosotros">NOSOTROS</a>
+                    <a href="#indicadores">INDICADORES</a>
+                    <a href="#beneficiarios">BENEFICIARIOS</a>
+                    <a href="#galeria">GALERIA</a>
+                    <a href="#contacto">CONTACTO</a>
+                </div>
             </div>
+        -->
+        <div class="row d-flex justify-content-center contenido">
+            <div class="titulo">AYUDAMOS A CONTRUIR TU PATRIMONIO</div>
         </div>
+        <div class="row d-flex justify-content-center link">
+            <a href="https://www.youtube.com/embed/IUrIJMdJJNY?rel=0&amp;showinfo=0" class="btn btn-outline-light boton">Conocer mas</a>
+        </div>
+        <div class="cuadro"></div>
+    </div>
+    <div id=indicadores class="container-fluid scrollify"># familias atendidas</div>
+    <div id=beneficiarios class="container-fluid scrollify">ANTONIO + LORENA + TRINI</div>
+    <div id=galeria class="container-fluid scrollify">GALERIA</div>
+    <div id=contacto class="container-fluid scrollify">CONTACTO</div>
+
+   
+
     
     <!-----QUE ES CAMBALACHE que?---->
-        <div class="row que">
-            <div class="col-12 d-flex justify-content-center">
-                <h1>CONSTRUIMOS<br> EL PATRIMONIO</h1>
-            </div>
-        </div>
-    </div>
     <!-----COMO FUNCIONA como?---->
     <!-----BENEFICIOS porque?---->
     <!-----NUESTROS SERVICIOS---->
