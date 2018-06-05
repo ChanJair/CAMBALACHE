@@ -1,40 +1,26 @@
 .scrollify{
-    background-color: rebeccapurple;
+    background-color: aqua;
     z-index: 0;
 }
 .filtro{
     width: 100%;
-    height: 500%;
+    min-height: 600%;
     background-color: black;
     opacity: .6;
     position: absolute;
     top: 0;
     right: 0;
     margin: 0;
-    z-index: 10;
+    z-index: 0;
 }
 
-/*******CARRUSEL*******/
+/*******NAVBAR*******/
 
-.slItem{
-    background-image: url(../img/_20161109_204236.JPG);
-    background-size: cover;
-}
-/*******CARRUSEL*******/
-
-
-
-
-/*******NOSOTROS*******/
-#nosotros{
-    /*background-image: url(../img/famMoni.JPG);*/
-    background-size: cover;
-}
 .navbar{
     position: fixed;
     width: 100%;
     color: white;
-    z-index: 15;
+    z-index: 20;
     height: 100px;
 }
 .logo img{
@@ -47,23 +33,48 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .8rem;
 }
+
+/*******NAVBAR*******/
+
+
+/*******CARRUSEL*******/
+.slider{
+    z-index: 15;
+}
+.publico{
+    background-image: url(../img/carrusel2.jpg);
+    padding: 0;
+}
+.venta{
+    background-image: url(../img/carrusel1.jpg);
+    background-size: cover;
+}
+.compra{
+    background-image: url(../img/carrusel3.jpg);
+    background-size: cover;
+}
+
 .titulo{
-    padding: 38vh 10% 0 10%;
+    padding: 38vh 15% 2% 15%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
     line-height: 4rem;
     z-index: 15;
+    text-align: center;
 }
 .liga{
-    padding: 2% 0 0 0;
+    position: relative;
+    top: 0;
 }
 .boton{
     z-index: 15;
     color: white;
-    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*******NOSOTROS*******/
+/*******CARRUSEL*******/
+
+
 
 
 /*******INDICADORES*******/
@@ -72,11 +83,13 @@
     background-size: cover;
 }
 .intro{
-    padding: 30vh 100px 0 100px;
+    padding: 30vh 150px 0 150px;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     z-index: 15;
+    text-align: center;
+    line-height: 1.5rem;
 }
 .indica{
     padding: 2vh 100px 0 100px;
@@ -96,11 +109,16 @@
     display: block;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .8rem;
+    text-align: center;
 }
 
 /*******INDICADORES*******/
 
 /*******BENEFICIARIOS*******/
+#beneficiarios{
+    background-image: url(../img/fondoVivienda.jpg);
+    background-size: cover;
+}
 .coment{
     padding: 30vh 130px 0 125px;
 }
@@ -129,55 +147,305 @@
     color: rgb(255, 230, 0);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2rem;
+    line-height: 1.2rem;
     padding: 1vh 0 0 0;
+    text-align: center;
 }
 .opinion{
     color: white;
     padding: 0 5%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .8rem;
+    text-align: center;
 }
 
 /*******BENEFICIARIOS*******/
 
 
 /*******GALERIA*******/
-.piso{
-    height: 50%;
+#galeria{
+    background-image: url(../img/fondoTerra.JPG);
+    background-size: cover;
 }
-.izquierdo1, .izquierdo2, .centro1, .centro2, .derecho1, .derecho2{
-    padding: 0;
-    
+.lienzo{
+    height: 16%;
+}
+.piso{
+    height: 42%;
+    padding: 0 100px 0 100px;
+}
+.nivel{
+    z-index: 15;
+}
+
+.margen{
+    margin: 10px;
+    height: 90%;
 }
 .izquierdo1{
-    background-image: url(../img/famAntonio.JPG);
+    /*background-image: url(../img/famAntonio.JPG);*/
     background-size: cover;
     z-index: 15;
 }
 .centro1{
-    background-image: url(../img/famClaudia.JPG);
+    /*background-image: url(../img/famClaudia.JPG);*/
     background-size: cover;
     z-index: 15;
 }
 .derecho1{
-    background-image: url(../img/famRobert.JPG);
+    /*background-image: url(../img/famRobert.JPG);*/
     background-size: cover;
     z-index: 15;
 }
 .izquierdo2{
-    background-image: url(../img/famLore.JPG);
+    /*background-image: url(../img/famLore.JPG);*/
     background-size: cover;
     z-index: 15;
 }
 .centro2{
-    background-image: url(../img/famTony.JPG);
+    /*background-image: url(../img/famTony.JPG);*/
     background-size: cover;
     z-index: 15;
 }
 .derecho2{
-    background-image: url(../img/famJapo.JPG);
+    /*background-image: url(../img/famJapo.JPG);*/
     background-size: cover;
     z-index: 15;
 }
+
+
+
+
+
+
+/*******EFECTO GALERIA*******/
+.view {
+    width: 100%;
+    height: 100%;
+    /*margin: 10px;*/
+    float: left;
+    /*border: 10px solid #fff;*/
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /*box-shadow: 1px 1px 2px #e6e6e6;*/
+    cursor: default;
+   /* background: #fff url(../img/famAntonio.JPG) no-repeat center center;*/
+    background-size: cover;
+}
+.view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative;
+    
+}
+.view h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+.view p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: .7rem;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(184, 172, 10, 0.603); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+/*******EFECTO GALERIA*******/
+
 /*******GALERIA*******/
 
+
+
+
+/*******CONTACTO*******/
+
+#contacto{
+    background-image: url(../img/donador2.JPG);
+    background-size: cover;
+}
+.descripcion{
+    padding: 130px 200px 0 200px;
+    
+}
+.instruccion{
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    z-index: 15;
+    line-height: 1.7rem;
+}
+.forma{
+    padding: 1% 0 0 0;
+}
+.cajaForma{
+    z-index: 15;
+}
+.encabezado{
+    color: white;
+    z-index: 15;
+    
+}
+
+
+
+
+/*******CONTACTO*******/
+
+
+/*******FOOTER*******/
+#footer{
+    background-image: url(../img/edificios.JPG);
+    background-size: cover;
+}
+.primer{
+    height: 25%;
+    padding: 130px 0 0 0;
+}
+.icos{
+    height: 45%;
+    padding: 0 100px 0 100px;
+}
+.incuba img{
+    height: 150px;
+}
+.reto img, .ashoka img, .posible img{
+    width: 150px;
+    
+}
+.icos a{
+    padding: auto 0 auto 0;
+    z-index: 15;
+}
+.segundo{
+    height: 30%;
+    background-color: black;
+    padding: 0 50px 0 50px;
+}
+.head{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(255, 230, 0);
+    z-index: 15;
+}
+.foIzq{
+    z-index: 15;
+}
+.grand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 50px 20px 0 0;
+    /*border-right-style: solid;
+    border-color: white;
+    border-width: 5px;*/
+    
+}
+.inf{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0 20px 0 20px;
+}
+.vinculo img{
+    height: 40px;
+}
+.foDer{
+    z-index: 15;
+}
+.mail{
+    padding: 50px 0 0 0;
+}
+.correo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+.foCen{
+    z-index: 15;
+}
+.cajaLinea img{
+    height: 100px;;
+}
+/*******FOOTER*******/
+
+
+
+
+
+
+/*******EFECTO MENU*******/
+
+
+  /*******EFECTO MENU*******/
