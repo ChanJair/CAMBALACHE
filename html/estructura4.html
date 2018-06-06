@@ -8,28 +8,35 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../../24042018/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/estilo2.css" />
     <link rel="stylesheet" href="../plugin/carrusel/carrusel/example/css/slider.css"><!--este es plugin css del carrusel-->
+    <link rel="stylesheet" href="../css/preloader.css"><!--este es el css del preloader-->
+    
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="../plugin/Scrollify/jquery.scrollify.js"></script><!--este es el plugin scrollify-->
     <script src="../plugin/carrusel/carrusel/slider.min.js"></script> <!--este es el plugin js del carrusel-->
+    <script src="../js/preloader.js"></script> <!--este es el js del preloader-->
+    
+
 
  
 </head>
 <body>
-   
+    <div id="fakeLoader"></div>
+
     <div class="row d-flex justify-content-center navbar"><!--esto es el navbar-->
         <div class="col-2 logo">
             <a href="#nosotros"><img src="../img/111.png"></a>
         </div>
         <div id="ocultar" class="col-9 d-flex justify-content-end" style="display:none">
-            <a href="#slider">NOSOTROS</a>
-            <a href="#indicadores">INDICADORES</a>
-            <a href="#beneficiarios">BENEFICIARIOS</a>
-            <a href="#galeria">GALERIA</a>
-            <a href="#contacto">CONTACTO</a>                
+            <a href="#slider" class="ocultarMenu">NOSOTROS</a>
+            <a href="#indicadores" class="ocultarMenu">INDICADORES</a>
+            <a href="#beneficiarios" class="ocultarMenu">BENEFICIARIOS</a>
+            <a href="#galeria" class="ocultarMenu">GALERIA</a>
+            <a href="#contacto" class="ocultarMenu">CONTACTO</a>                
         </div>
-        <div class="col-1">
-            <a href="#" id="alternar-respuesta-ej1">MAS</a>
+        <div class="col-1 cajaComando d-flex align-items-center justify-content-center">
+         <img class="comando" src="../img/hamburguesa.png">
         </div>
 
     </div>
@@ -108,7 +115,7 @@
       <div class="row piso">
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen izquierdo1">
-                <div class="view view-first" style="background-image: url(../img/famAntonio.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famAntonio-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Martinez</h2>  
@@ -120,7 +127,7 @@
         </div>
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen centro1">
-                <div class="view view-first" style="background-image: url(../img/famClaudia.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famClaudia-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Gonzalez</h2>  
@@ -132,7 +139,7 @@
         </div>
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen derecho1">
-                <div class="view view-first" style="background-image: url(../img/famRobert.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famRobert-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Gonzalez</h2>  
@@ -146,7 +153,7 @@
       <div class="row piso">
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen izquierdo2">
-                <div class="view view-first" style="background-image: url(../img/famLore.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famLore-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Rojo</h2>  
@@ -158,7 +165,7 @@
         </div>
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen centro2">
-                <div class="view view-first" style="background-image: url(../img/famTony.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famTony-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Diaz</h2>  
@@ -170,7 +177,7 @@
         </div>
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen derecho2">
-                <div class="view view-first" style="background-image: url(../img/famJapo.JPG)">  
+                <div class="view view-first" style="background-image: url(../img/famJapo-min.JPG)">  
                     <img src=""/>  
                     <div class="mask">  
                         <h2>Fam. Zuñiga</h2>  
@@ -258,6 +265,7 @@
     <div class="row d-flex justify-content-center filtro"></div><!--aqui esta el filtro de toda la pagina-->
 
 
+
     <script>//animacion del scroll
         $(function() {
             $.scrollify({
@@ -276,11 +284,29 @@
         });
     </script>
     <script>//animacion ocultar menu
-        $(document).ready(function(){ 
-            $('#alternar-respuesta-ej1').on('click',function(){
-             $('#ocultar').toggle();
+        $(document).ready(function(){
+            $(".comando").click(function(){
+                $(".ocultarMenu").toggle();
             });
-         });
+        });
+    </script>
+   <script type="text/javascript">
+
+    $("#fakeLoader").fakeLoader({
+    
+    timeToHide:2400, //Time in milliseconds for fakeLoader disappear
+    
+    zIndex:"999",//Default zIndex
+    
+    spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+    
+    bgColor:"#e22d2d", //Hex, RGB or RGBA colors
+
+
+    
+    
+    });
+    
     </script>
 
 </body>
