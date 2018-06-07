@@ -43,7 +43,7 @@
     <div class="slider scrollify" id="slider"><!--aqui inicia el carrusel-->
         <div class="slItems">
             <div class="slItem publico">
-                <div class="row d-flex justify-content-center titulo">HACEMOS FAMILIAS FELICES</div>
+                <div class="row d-flex justify-content-center titulo">¡HACEMOS FAMILIAS FELICES!</div>
                 <div class="row d-flex justify-content-center liga">
                     <a href="https://www.youtube.com/embed/IUrIJMdJJNY?rel=0&amp;showinfo=0" target="_blanck" class="btn btn-warning boton"><i>Conocer mas</i></a>
                 </div>
@@ -112,7 +112,7 @@
     </div>
     <div id=galeria class="container-fluid scrollify"><!--utilice este efecto https://tympanus.net/Tutorials/OriginalHoverEffects/-->
       <div class="row lienzo"></div>
-      <div class="row piso">
+      <div class="row piso1">
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen izquierdo1">
                 <div class="view view-first" style="background-image: url(../img/famAntonio-min.JPG)">  
@@ -150,7 +150,7 @@
             </div>
         </div>
       </div>
-      <div class="row piso">
+      <div class="row piso2">
         <div class="col-md-4 col-sm-12 nivel"><!--aqui hay un efecto css-->
             <div class="margen izquierdo2">
                 <div class="view view-first" style="background-image: url(../img/famLore-min.JPG)">  
@@ -227,7 +227,7 @@
         <div class="row primer d-flex justify-content-center">
             <div class="head">RECONOCIMIENTOS</div>
         </div>
-        <div class="row icos">
+        <div class="row icos d-flex align-items-center">
             <div class="col-3 d-flex justify-content-center align-items-center incuba">
                 <a href="https://www.facebook.com/incubasocial/" target="_blanck"><img src="../img/incubaSocial.PNG"></a>
             </div>
@@ -252,7 +252,7 @@
                 </div>
             </div>
             <div class="col-5 foDer">
-                <div class="row mail">
+                <div class="row d-flex justify-content-start mail">
                     <a href="mailto:cambalache@gmail.com">cambalachegdl@gmail.com</a>
                 </div>
                 <div class="row vinculo">
@@ -278,8 +278,8 @@
             $('#slider').rbtSlider({
                 height: '100vh', 
                 'dots': true, // SIRCULOS
-                'arrows': true, //para las flechas
-                'auto': 10 //esto es de los segundos
+                'arrows': false, //para las flechas
+                'auto': 7 //esto es de los segundos
             });
         });
     </script>
@@ -290,7 +290,7 @@
             });
         });
     </script>
-   <script type="text/javascript">
+   <script type="text/javascript">//animacion preloader
 
     $("#fakeLoader").fakeLoader({
     
